@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+	.title{
+		width: 900px;
+		display: flex;
+    	color: black;
+    	background-color: skyblue;
+    	font-family: georgia;
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	.list{
+		width: 900px	;
+		display: flex;
+		color: white;
+		background-color: darkblue;
+		font-family: verdana;
+		flex-direction: row;
+    	justify-content: space-around;
+    	a{text-decoration: none;}
+    	a:hover{text-decoration: none; color: lightblue;}
+    	ul:hover{color: lightblue;}
+	}
+
+	.mouse{
+		cursor: pointer;
+	}
+
+	.detail{
+		width: 900px;
+		height: 200px;
+		display: flex;
+		color: black;
+		background-color: #f0f0f0;
+		font-family: courier;
+		align-items: initial;
+		flex-direction: column;
+	}	
+
+
+
+	.dropdown{
+		nav{
+			 font-family: arial, sans-serif;
+			 color: white;
+			 border: 2px skyblue;
+			 text-align: center;
+			 width: 10px;
+			 background-color: lightskyblue;
+		}
+		nav ul{
+			display: none;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav:hover ul{display: block;}
+		nav ul li{
+			border-top: 2px skyblue;
+			background-color: lightgray;
+			width: 10px;
+			color: black;
+			ul:hover{color: lightblue;}
+			cursor: pointer;
+		}
+		nav ul li:hover{
+			background-color: aliceblue;}
+			a{text-decoration: none;}
+    		a:hover{text-decoration: none; color: lightblue;}
+	}
+
+</style>
+</head>
+<body>
+	<div class="title">
+		<h1>My page</h1>
+		<p>Welcome to my homepage. Explore and enjoy!</p>
+	</div>
+	<div class="list">
+		<ul class="mouse">Home</ul>
+		<ul class="mouse">About</ul>
+		<div class="dropdown" >
+			<ul class="mouse">Service</ul>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Graphic Design</a></li>
+				<li><a href="#">Digital Marketing</a></li>
+		</div>
+		<ul class="mouse">Contact</ul>
+	</div>
+	<div class="detail">
+		<h2>This is my first personal page.</h2>
+		<p>E-mail address: <a href="mailto:113306078@g.nccu.edu.tw">113306078@g.nccu.edu.tw</a></p>
+	</div>
+
+</body>
+</html>
